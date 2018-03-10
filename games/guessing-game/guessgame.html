@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guessing Game</title>
+
+<script src="guessgame.js"></script>
+</head>
+
+<body style="background-color: darkturquoise; padding: 4px;">
+<h1 style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; font-size: 300%;"> Guess the Number! </h1>
+<fieldset style="background-color: lightblue;">
+ <legend>Inputs</legend>
+ <label for="guess">Your Guess:</label>
+ <input type="text" id="guess" value="101" 
+ onkeydown = "if (event.keyCode == 13)
+ document.getElementById('submit').click()" />
+ <input type="button" onclick="yourGuess()" value="submit" id="submit" /><br /><br />
+  
+ <input type="button" onclick="generateNumberToGuess()" value="New Game" /><br /><br />
+ 
+<input type="checkbox" id="myCheck" onclick="showNumberToGuess()">
+<label for="myCheck">Cheat</label><br />
+<p id="text" style="display:none; background-color: #FFFFFF; padding: 1em; border-style: solid; border-color: lightgray; border: 1px; border-radius: 4px; float: left; clear: left;">Checkbox is CHECKED!</p>
+
+</fieldset><br />
+<fieldset id="guesses" class="guesses" style="background-color: lightblue;">
+ <legend> Output </legend>
+ <p id="output" name="output" style="background-color: #FFFFFF; padding: 1em; border-style: solid; border-color: lightgray; border: 1px; border-radius: 4px; float: left; clear: left; display: none;"></p>
+</fieldset>
+
+</body>
+</html>

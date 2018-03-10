@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+ 
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+/* Parallax BG */
+
+.parallax {
+    background-image: url("https://i.imgur.com/xy0Nt3F.jpg");
+
+    min-height: 200px; 
+	
+	padding: 100px;
+	margin: 0px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+	z-index: 1;
+	height: 1000px;
+	background-color: rgba(145, 145, 155, 0.5);
+	color: yellow;
+	font-size: 36px;
+	text-align: center;
+	padding: 50px;
+	margin: 50px;
+	border-radius: 75px;
+}
+
+.footer {
+    text-align:center;
+	margin-top: 100px;
+}
+
+.transparent {
+	width:100%;
+	height:100%;
+	z-index:5;
+	background:rgba(10,10,10,0.5);
+}
+
+</style>
+<link href="../css/menu.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function transition() {
+var elem = document.getElementById("transition");
+var checkbox = document.getElementById("checkBox")
+if checkBox.checked == true
+	{ 
+	elem.style.background-color = "rgba(0,0,0,0.5)"  
+	} else { 
+	elem.style.background-color = "rgba(0,0,0,0)" 
+	}
+}
+transition();
+</script>
+</head>
+
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--    All rights reserved    -->
+<nav role="navigation">
+  <div id="menuToggle" data-ready-state="0">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" id="checkBox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+	  <li class="footer"><small>&copy; TJSJ 2018</small></li>
+    </ul> 
+  </div>
+</nav>
+
+<body>
+
+<div class="transparent">
+
+<div class="parallax">
+<div class="content">
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+</div>
+
+<div class="parallax">
+<div class="content">
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+</div>
+
+<div class="parallax"></div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The JPEG Steller's Jay</title>
+<link href="css/my-site-css.css" type="text/css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/show-more.js"></script>
+<script>
+ jQuery(document).ready(function(){
+        jQuery("#navbar-body").load("navbar.html")
+});
+</script> 
+<style>
+navbar li{
+   list-style: none;
+}
+
+navbar li:before{
+   content: '';
+   display: inline-block;
+   height: .70em;
+   width: .70em;
+   padding-left: 6px;
+   background: url('images/button.png') no-repeat left top;;
+   background-size: contain;
+}
+
+.textArea a {
+	text-decoration: none;
+	color: black;
+}
+
+.textArea a:hover {
+	text-decoration: underline;
+	color: rgb(140,140,140);
+}
+
+#about-me {
+	background-color: rgb(190,190,190);
+}
+
+ul img {
+	padding-left: 64px;
+}
+</style>
+</head>    
+<body>
+
+<!-- The Navbar! -->
+<div id="navbar-body">
+<!-- The Navbar! -->
+<link href="css/my-site-css.css" type="text/css" rel="stylesheet" />
+  <img src="images/site-logo.png" alt="British Columbia" /><br />
+  <p id="logo">British Columbia Info</p>
+<div id="navbar">  
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-page.html">About</a></li>
+    <li><a href="game-page.html">Games</a></li>
+    <li><a href="climate-page.html">Climate</a></li>
+    <li><a href="contact-page.html">Contact</a></li>
+  </ul>
+</div>
+</div>
+  
+<!--This is what to edit for each page-->
+
+<div class="main">
+  <h1>About</h1>
+  <p><br /><br /><!--Excerpt from Wikipedia-->
+  <img id="flag" src="images/BC-Flag.png" alt="British Columbian Flag" width="400" height="225" />
+  	<ul><br /><br />
+		<li><b>Population (2016):</b> 4,648,055</li><br />
+		<img src="images/BC-Population-Density.png" alt="BC Population Density" width="400" height="250" />
+		<br /><br />
+		<!-- Sauce: Statistics Canada 2006 Census -->
+		<li><b>Capital:</b> Victoria</li><br />
+		<img src="images/Victoria.jpg" alt="Victoria, BC" width="400" height="225" />
+		<br /><br />
+		<!-- Sauce: Victoria, BC - BC Parliament from Delta Victoria Ocean Pointe 02 -->
+		<li><b>Largest City:</b> Vancouver</li><br />
+		<img src="images/vancouver.jpg" alt="Vancouver, BC" width="400" height="225" />
+		<br /><br />
+		<!-- Sauce: http://maxpixel.freegreatpicture.com/Vancouver-Skyscrapers-British-Columbia-Mirroring-1768956 -->
+		<li><b>Provincial Bird:</b> Steller's Jay</li><br />
+		<img src="images/stellers-jay.jpg" alt="Steller's Jay" width="400" height="225" />
+		<br /><br /> 
+		<!-- Sauce: http://www.naturespicsonline.com/photos/5505?q=jay -->
+		<li><b>Provincial Flower:</b> Pacific Dogwood</li><br />
+		<img src="images/pacific-dogwood.jpg" alt="Pacific Dogwood" width="400" height="225" />
+		<br /><br />
+		<!-- Sauce: https://www.flickr.com/photos/john_d_rusk/33158575174 -->
+		<li><b>Provincial Tree:</b> Western Red Cedar</li><br />
+		<img src="images/red-cedar.jpg" alt="Western Red Cedar" width="400" height="225" />
+		<br /><br />
+		<!-- Sauce: https://commons.wikimedia.org/wiki/File:Gr%C3%BCnes_Labor_Coburg,_Thuja_plicata_%27Excelsa%27.jpg -->
+	</ul>
+  
+	<b>British Columbia</b> is bordered to the west by the <i>Pacific Ocean</i> and the American state of Alaska, to the north by Yukon Territory and the Northwest Territories, to the east by the province of Alberta, and to the south by the American states of Washington, Idaho, and Montana. The southern border of British Columbia was established by the 1846 Oregon Treaty, although its history is tied with lands as far south as California. British Columbia's land area is 944,735 square kilometres (364,800 sq mi). British Columbia's rugged coastline stretches for more than 27,000 kilometres (17,000 mi), and includes deep, mountainous fjords and about 6,000 islands, most of which are uninhabited. It is the only province in Canada that borders the <i>Pacific Ocean.</i><br /><br />
+
+	British Columbia's capital is Victoria, located at the southeastern tip of Vancouver Island. Only a narrow strip of Vancouver Island, from Campbell River to Victoria, is significantly populated. Much of the western part of Vancouver Island and the rest of the coast is covered by temperate rainforest. The province's most populous city is Vancouver, which is at the confluence of the Fraser River and Georgia Strait, in the mainland's southwest corner (an area often called the Lower Mainland). By land area, Abbotsford is the largest city. Vanderhoof is near the geographic centre of the province.<br /><br />
+  </p>
+  <div id="maps" style="height: 70%; width: 40%;">
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDxLzik8w7TPjNQ3EjbEnwD6NoGSO2p6V4'></script><div style='overflow:hidden;width:450px;height:350px;'><div id='gmap_canvas' style='width:450px;height:350px;'></div></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(53.7266683,-127.64762050000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(53.7266683,-127.64762050000002)});infowindow = new google.maps.InfoWindow({content:'<strong>British Columbia</strong><br>British Columbia, Canada<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+  </div>
+
+			
+</body>
+</html>

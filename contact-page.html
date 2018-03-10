@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The JPEG Steller's Jay</title>
+<link href="css/my-site-css.css" type="text/css" rel="stylesheet" />
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#fname, #lname, #country {
+	width: 300px;
+	font-size: 85%;
+}
+
+#subject {
+	font-size: 85%;		
+}
+
+input[type=submit] {
+    background-color: #276D6A;
+    color: white;
+    padding: 12px 20px;
+	border-radius: 0px;
+    border: none;
+    cursor: pointer;
+	text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+	text-align: left;
+    background-color: #f2f2f2;
+    padding: 60px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ jQuery(document).ready(function(){
+        jQuery("#navbar-body").load("navbar.html")
+});
+</script>     
+</head>
+<body>
+
+<!-- The Navbar! -->
+<div id="navbar-body">
+</div>
+  
+<!--This is what to edit for each page-->
+
+<div class="main">
+  <h1>Contact Us!</h1>
+  <h3>Did we miss something? Have any suggestions?</h3>
+  
+<!-- code by w3schools, edited by me -->
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label><br />
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	<br />
+    <label for="lname">Last Name</label><br />
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	<br />
+    <label for="country">Country</label>
+	<br />
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+	  <option value="brazil">Brazil</option>
+      <option value="canada">Canada</option>
+	  <option value="france">France</option>
+	  <option value="germany">Germany</option>
+	  <option value="hongkong">Hong Kong</option>
+	  <option value="italy">Italy</option>
+	  <option value="japan">Japan</option>
+	  <option value="mexico">Mexico</option>
+	  <option value="netherlands">Netherlands</option>
+	  <option value="newzealand">New Zealand</option>
+	  <option value="russia">Russia</option>
+	  <option value="spain">Spain</option>
+	  <option value="taiwan">Taiwan</option>
+      <option value="usa">USA</option>
+	  <option value="uk">United Kingdom</option>
+	  <option value="other">Other</option>
+	  <input type="text" id="other" name="othercountry" placeholder="If your country isn't listed above, enter it here.">
+    </select>
+	<br />
+    <label for="subject">Subject</label><br />
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+</body>
+</html>
